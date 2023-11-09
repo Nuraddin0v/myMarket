@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+.container {
+  width: 1320px;
+  margin: 24px auto;
+  display: grid;
+  gap: 24px;
+  .img-container {
+    display: flex;
+    gap: 24px;
+    .imgOne {
+      border-radius: 10px;
+      background: linear-gradient(
+          99deg,
+          rgba(0, 0, 0, 0.6) 10.4%,
+          rgba(0, 0, 0, 0) 59.43%
+        ),
+        url("https://s3-alpha-sig.figma.com/img/0c99/3fa1/e3446b7d29575d3d991b00a479103bab?Expires=1699228800&Signature=YbpeJoXWFCkaDcMrYNo3v9YP5V~Z1Q7R7OffyvQ6YpSywuCEOiM2QrvKxQAGf7UCMq7IcUc3bNIXGVS42mR2X67ZEpwenCDCZNeGnYGzyGoPaGFELV15KV33OykuBw4dHDVs5gVKYokas4e75xsjjm3GqbSD6nRmke49~Xu6-AnOX4GDe6SrZYjh5xeXe0zhm4bBxmyvYvPfeBWC0PEylUc21NkTWZp~A6Y37X0SiIa6SRVzlXmHxz6ig5qHIrUtkain3cEwAnLBdaWFh9QYiCV3Ehc5q1UG4IUYP40yBkiOmG6WOV4XJFkxmuqWnWG3GEGIUF7Awv-VH-yEjpfl4g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
+        lightgray -82.637px -19.855px / 136.966% 120.167% no-repeat;
+      width: 872px;
+      height: 600px;
+      background-size: 100%, 100%;
+      background-size: cover;
+      .content {
+        margin: 155px 216px 155px 60px;
+        h2 {
+          width: 596px;
+          color: var(--gray-scale-white, #fff);
+          /* Heading 02/Heading 02 — 600 */
+          font-family: Poppins;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 120%; /* 57.6px */
+          word-spacing: 3px;
+          margin: 0;
+        }
+
+        .sale {
+          display: flex;
+          gap: 12px;
+          margin: 28px 0;
+          .devider {
+            width: 2px;
+            height: 65px;
+            background: var(--branding-success-bright, #84d187);
+          }
+          b {
+            color: var(--gray-scale-white, #fff);
+            /* Body XL/Body XL, 500 */
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 30px */
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            span {
+              // display: flex;
+              padding: 4px 12px;
+              align-items: flex-start;
+              gap: 10px;
+              border-radius: 5px;
+              background: var(--branding-warning, #ff8a00);
+            }
+          }
+          p {
+            color: var(--gray-scale-white, #fff);
+            /* Body Small/Body Small, 400 */
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            opacity: 0.8;
+            // padding: 0;
+            margin: 0;
+            margin-top: 8px;
+          }
+        }
+        button {
+          display: flex;
+          padding: 16px 40px;
+          justify-content: center;
+          align-items: center;
+          border: none;
+          gap: 16px;
+          border-radius: 53px;
+          background: var(--gray-scale-white, #fff);
+          color: var(--branding-success, #00b207);
+          /* Body Medium/Body Medium, 600 */
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 120%; /* 19.2px */
+        }
+      }
+    }
+    .images {
+      display: grid;
+      gap: 24px;
+      .imgTwo {
+        width: 423px;
+        height: 288px;
+        position: relative;
+
+        .contentTwo {
+          position: absolute;
+          top: 32px;
+          left: 32px;
+          h3 {
+            color: var(--gray-scale-gray-900, #1a1a1a);
+            /* CAPS LOCK/Medium Caps Lock */
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%; /* 14px */
+            letter-spacing: 0.42px;
+            text-transform: uppercase;
+            margin: 0;
+          }
+          h1 {
+            color: var(--gray-scale-gray-900, #1a1a1a);
+            /* Heading 05/Heading 05 — 600 */
+            font-family: Poppins;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 38.4px */
+            margin: 0;
+            margin-top: 10px;
+          }
+          p {
+            color: var(--gray-scale-gray-600, #666);
+            /* Body Small/Body Small, 400 */
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 21px */
+            margin: 0;
+            margin-top: 12px;
+          }
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            border: none;
+            color: var(--branding-success, #00b207);
+            /* Body Medium/Body Medium, 600 */
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 19.2px */
+            padding: 0;
+            margin-top: 24px;
+            &:hover {
+              cursor: pointer;
+              color: #fff;
+              border: 1px solid #00b207;
+              background-color: #00b207;
+              transition: 0.5s;
+              padding: 5px;
+              border-radius: 5px;
+            }
+          }
+          // color: red;
+          // z-index: 10;
+        }
+      }
+      .imgThree {
+        width: 423px;
+        height: 288px;
+        border-radius: 10px;
+        background: linear-gradient(
+            0deg,
+            rgba(0, 38, 3, 0.8) 0%,
+            rgba(0, 38, 3, 0.8) 100%
+          ),
+          url("https://s3-alpha-sig.figma.com/img/a463/4113/f6d6a27ca8a91430a85ffc7700edf9ab?Expires=1699228800&Signature=Gzqed4Wy0zlbVA0j6BkVmWCqO5cYMUoY1~YD9urQaRTNziOydwpA7yfwda4a1vOr0KzPxYJMZ81M7AllPWC1A~g2IjO-~MAYdAIJukNUlrTGARCqGsOK3ENc8TwSGpO9Bbse7B9fHxKrQi0jwyKdlkH65azT4NhCxy5~FIOM3bLMWl6mPY8SteMjcWRFiQuSvYmheULmwtxbc7gDiWOb4ZgD8-blqaYXhmSK~68l1Fy8C5TG57DD7zjgNichQWocxJ1jNWgNhR8GXYrWtTcnV2Fl29jEnrD26Ja6eVUC~4V760M2cbv~SNmTBaA1jtzjWewDhYkj9F5HCn1AeoiTzQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
+          lightgray 50% / cover no-repeat;
+        background-size: 100%, 100%;
+        background-size: cover;
+        .contentThree {
+          margin: 67px 40px 68px;
+          // display: flex;
+          // display: grid;
+          p {
+            color: var(--gray-scale-white, #fff);
+            text-align: center;
+            /* CAPS LOCK/Medium Caps Lock */
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%; /* 14px */
+            letter-spacing: 0.42px;
+            text-transform: uppercase;
+            margin: 0;
+          }
+          h1 {
+            color: var(--gray-scale-white, #fff);
+            text-align: center;
+            /* Heading 05/Heading 05 — 600 */
+            font-family: Poppins;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 38.4px */
+            margin: 0;
+            margin-top: 12px;
+          }
+          .btn {
+            display: flex;
+            // justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            gap: 12px;
+            color: var(--branding-success, #00b207);
+            text-align: center;
+            /* Body Medium/Body Medium, 600 */
+            border: none;
+            background-color: transparent;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 19.2px */
+            margin-top: 32px;
+            &:hover {
+              cursor: pointer;
+              color: #fff;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+  .service {
+    display: flex;
+    width: 1320px;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--gray-scale-white, #fff);
+    box-shadow: 0px 8px 40px 0px rgba(0, 38, 3, 0.08);
+    div {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      span{
+        display: grid;
+        gap: 8px;
+        h3{
+          margin: 0;
+        }
+        p{
+          margin: 0;
+        }
+      }
+    }
+  }
+}
