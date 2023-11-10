@@ -3,6 +3,7 @@
   background-color: #333;
   // width: 100vw;
   //   width: 1920px;
+  // position: relative;
   .nav-container {
     width: 1320px;
     margin: 0 auto;
@@ -10,43 +11,74 @@
     align-items: center;
     justify-content: space-between;
     color: #fff;
-  }
-  .pages__ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: none;
-    gap: 32px;
-    li {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      color: var(--gray-scale-gray-400, #999);
-      a {
-        /* Body Small/Body Small, 500 */
-        color: currentColor;
-        font-family: Poppins;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 150%; /* 21px */
+    .pages__ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: none;
+      gap: 32px;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: var(--gray-scale-gray-400, #999);
+        a {
+          /* Body Small/Body Small, 500 */
+          color: currentColor;
+          font-family: Poppins;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%; /* 21px */
+        }
+      }
+    }
+    .phone__contact {
+      list-style: none;
+      color: var(--gray-scale-white, #fff);
+      padding: 0;
+      z-index: 10;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+    .logo__menu {
+      z-index: 10;
+      svg {
+        width: 35px;
+        height: auto;
       }
     }
   }
-  .phone__contact {
-    list-style: none;
-    color: var(--gray-scale-white, #fff);
-    padding: 0;
-    li {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-  }
-  .logo__menu {
-    svg {
-      width: 35px;
-      height: auto;
+  .sidebar {
+    width: 100vw;
+    // height: 100%;
+    height: 100vh;
+    background-color: rgba(0, 128, 0, 0.364);
+    position: absolute;
+    top: 0;
+    left: 0;
+    // opacity: 0.3;
+    // color: green;
+    color: black;
+    display: flex;
+    // text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 5px;
+      li {
+        // gap: 5px !important;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
     }
   }
 }
@@ -60,11 +92,16 @@
         display: none;
       }
     }
+    .sidebar {
+      display: none;
+    }
   }
 }
 @media (max-width: 640px) {
-  .container.nav-container {
-    width: 95%;
-    margin: 0 auto;
+  .nav {
+    .nav-container {
+      width: 95%;
+      margin: 0 auto;
+    }
   }
 }

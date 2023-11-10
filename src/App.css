@@ -10,6 +10,17 @@ body {
 #active {
   color: #fff;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
 @media (min-width: 640px) {
   .container {
     max-width: 640px;

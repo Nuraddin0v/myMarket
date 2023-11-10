@@ -22,7 +22,7 @@ function App() {
           {/* <Route path="/categories/PopularProducts" element={<Categories />} /> */}
           {/* <Section /> */}
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </div>
   );

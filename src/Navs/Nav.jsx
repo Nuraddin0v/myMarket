@@ -154,6 +154,88 @@ function Nav() {
             </li>
           </ul>
         </div>
+        <div style={{ display: menu ? "" : "none" }} className="sidebar">
+          <ul className="pages__ul">
+            <li id="active">
+              <a>Home</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+              >
+                <path
+                  d="M1.33332 1.66667L5.99999 6.33334L10.6667 1.66667"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              <a>Shop</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+              >
+                <path
+                  d="M1.33332 1.66667L5.99999 6.33334L10.6667 1.66667"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              <a>Pages</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+              >
+                <path
+                  d="M1.33332 1.66667L5.99999 6.33334L10.6667 1.66667"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              <a>Blog</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+              >
+                <path
+                  d="M1.33332 1.66667L5.99999 6.33334L10.6667 1.66667"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              <a>About Us</a>
+            </li>
+            <li>
+              <a>Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
