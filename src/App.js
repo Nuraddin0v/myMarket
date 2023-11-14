@@ -9,7 +9,12 @@ import SaleShop from "./Sale/SaleShop";
 import SaleSummer from "./SaleSummer/SaleSummer";
 import Section from "./SectionOne/Section";
 import Footer from "./Footer/Footer";
-import "./App.css"
+import "./App.css";
+import HomePage from "./Home/HomePage";
+<link
+  href="https://fonts.googleapis.com/css?family=Poppins"
+  rel="stylesheet"
+></link>;
 function App() {
   return (
     <div className="App">
@@ -18,7 +23,7 @@ function App() {
         <Navbar />
         <Nav />
         <Routes>
-          {/* <Route path="/" element={<Section />} /> 👈 Renders at /app/ */}
+          <Route path="/" element={<HomePage />} />
           {/* <Route path="/categories/PopularProducts" element={<Categories />} /> */}
           {/* <Section /> */}
         </Routes>

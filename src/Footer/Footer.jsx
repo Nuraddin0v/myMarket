@@ -1,8 +1,10 @@
 import React from "react";
 import "./Footer.scss";
+import FooterSub from "./Footer Subscribe/FooterSub";
 const Footer = () => {
   return (
     <div>
+      <FooterSub />
       <div className="footer">
         <div className="container footer__container">
           <div>

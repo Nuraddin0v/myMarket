@@ -1,0 +1,218 @@
+.home-container {
+  width: 1320px;
+  margin: 24px auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 24px;
+  .item__one {
+    max-width: 872px;
+    height: 600px;
+    border-radius: 10px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: linear-gradient(
+        99deg,
+        rgba(0, 0, 0, 0.6) 10.4%,
+        rgba(0, 0, 0, 0) 59.43%
+      ),
+      url("https://www.figma.com/file/YIlHjj28QoIPoQUha7U0bX/image/0c993fa1e3446b7d29575d3d991b00a479103bab"),
+      lightgray -82.637px -19.855px / 136.966% 120.167% no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    color: #fff;
+    // width: 100%;
+    .date__one {
+      // padding: 200px 216px 0 60px;
+
+      h1 {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        word-spacing: 3px;
+      }
+      .desc {
+        padding: 28px 0;
+        display: flex;
+        gap: 12px;
+        .devider {
+          width: 2px;
+          height: 65px;
+          background: #84d187;
+        }
+        .text {
+          h3 {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            display: flex;
+            gap: 8px;
+            span {
+              padding: 4px 12px;
+              border-radius: 5px;
+              background-color: #ff8a00;
+            }
+          }
+          p {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            margin-top: 8px;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+  .item__two {
+    max-width: 423px;
+    height: 288px;
+    border-radius: 10px;
+    background: url("../../public/images/BG.jpg"),
+      rgb(211, 211, 211) -3px -69.762px / 123.877% 181.944% no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    color: #1a1a1a;
+    .date__two {
+      // padding: 32px 100px 0 32px;
+      h3 {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 14px */
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+      }
+      h1 {
+        font-size: 32px;
+        margin-top: 8px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+      }
+      p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        opacity: 0.7;
+        margin-top: 12px;
+      }
+      button {
+        margin-top: 24px;
+      }
+    }
+  }
+  .item__three {
+    max-width: 423px;
+    height: 288px;
+    border-radius: 10px;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 38, 3, 0.8) 0%,
+        rgba(0, 38, 3, 0.8) 100%
+      ),
+      url("https://www.figma.com/file/YIlHjj28QoIPoQUha7U0bX/image/a4634113f6d6a27ca8a91430a85ffc7700edf9ab"),
+      lightgray 50% / cover no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    color: #fff;
+    .date__three {
+      // padding: 67px 40px 0;
+      text-align: center;
+      button {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .home-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    .item__one {
+      background-size: 100% 100%;
+      .date__one {
+        padding: 200px 170px 0 60px;
+      }
+    }
+    .item__two {
+      .date__two {
+        padding: 32px 170px 0 32px;
+      }
+    }
+  }
+}
+@media (min-width: 640px) {
+  .home-container {
+    .item__one {
+      .date__one {
+        padding: 200px 216px 0 60px;
+      }
+    }
+    .item__two {
+      .date__two {
+        padding: 32px 100px 0 32px;
+      }
+    }
+    .item__three {
+      .date__three {
+        padding: 35px 40px 0;
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .home-container {
+    width: 95%;
+    margin: 24px auto;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    .item__one {
+      grid-row: 1;
+      grid-column: 1;
+      .date__one {
+        padding: 200px 0 0 20px;
+        h1 {
+          font-size: 30px;
+        }
+        .desc {
+          .devider {
+            height: 100px;
+          }
+          .text {
+            h3 {
+              display: block;
+              span {
+                width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .item__two {
+      background-position: 50%;
+      margin: 0 auto;
+      width: 100%;
+      .date__two {
+        padding: 20px 10px 0;
+      }
+    }
+    .item__three {
+      margin: 0 auto;
+      .date__three {
+        padding: 20px 10px 0;
+        h1{
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
