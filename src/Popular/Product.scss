@@ -1,0 +1,183 @@
+.container {
+  width: 1320px;
+  margin: 24px auto;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    .product {
+      width: 264px;
+      height: 327px;
+      border: 1px solid var(--gray-scale-gray-100, #e6e6e6);
+      background: var(--gray-scale-white, #fff);
+      display: grid;
+      justify-content: center;
+      position: relative;
+      &:hover {
+        box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+        z-index: 10;
+        .data {
+          .dataset {
+            .heart {
+              display: flex;
+            }
+            .eye {
+              display: flex;
+            }
+            p {
+              color: #00b207;
+            }
+          }
+        }
+      }
+      img {
+        margin-top: 5px;
+        width: 254px;
+        height: 230px;
+      }
+      .data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+        .dataset {
+          .circle {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #f2f2f2;
+            border-radius: 50%;
+            background-color: #fff;
+          }
+          .heart {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            justify-content: center;
+            align-items: center;
+            display: none;
+          }
+          .eye {
+            position: absolute;
+            top: 5px;
+            right: 50px;
+            justify-content: center;
+            align-items: center;
+            display: none;
+          }
+          b {
+            padding: 3px 8px;
+            background-color: #ea4b48;
+            color: #fff;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+          }
+          p {
+            color: #4d4d4d;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+          }
+          h2 {
+            color: #1a1a1a;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            span {
+              color: #999;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%; /* 24px */
+              text-decoration-line: line-through;
+              margin-left: 2px;
+            }
+          }
+        }
+        .bag {
+          width: 40px;
+          height: 40px;
+          background-color: #f2f2f2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+@media ((min-width: 1320px) and (max-width:1536px)) {
+  .container {
+    .products {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+    }
+  }
+}
+@media ((min-width: 1280px) and (max-width:1320px)) {
+  .container {
+    .products {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      row-gap: 24px;
+      justify-content: space-between;
+    }
+  }
+}
+@media ((min-width: 1024px)and (max-width:1279px)) {
+  .container {
+    .products {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      row-gap: 24px;
+      justify-content: space-between;
+    }
+  }
+}
+@media ((min-width: 640px) and (max-width:1023px)) {
+  .container {
+    .products {
+      display: grid;
+      grid-template-columns: auto auto;
+      row-gap: 24px;
+      justify-content: space-between;
+    }
+  }
+}
+@media (max-width: 639px) {
+  .container {
+    width: 95%;
+    margin: 24px auto;
+    .title {
+      display: grid;
+      justify-content: center;
+      text-align: center;
+      button {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 24px;
+      }
+    }
+    .products {
+      display: grid;
+      grid-template-columns: auto;
+      row-gap: 24px;
+      justify-content: center;
+      .product {
+        // width: auto;
+        width: 230px;
+        height: auto;
+        img {
+          width: 220px;
+        }
+      }
+    }
+  }
+}

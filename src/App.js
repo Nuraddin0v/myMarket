@@ -1,13 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Categories from "./Categories/Categories";
-import DealsProduct from "./Deals/DealsProduct";
-import FeaturedProducts from "./Featured/FeaturedProducts";
 import Navbar from "./Navbar/Navbar";
 import Navigation from "./Navigation/Navigation";
 import Nav from "./Navs/Nav";
-import SaleShop from "./Sale/SaleShop";
-import SaleSummer from "./SaleSummer/SaleSummer";
-import Section from "./SectionOne/Section";
 import Footer from "./Footer/Footer";
 import "./App.css";
 import HomePage from "./Home/HomePage";
@@ -24,6 +18,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          {/* <Route path="/" element={} /> */}
           {/* <Route path="/categories/PopularProducts" element={<Categories />} /> */}
           {/* <Section /> */}
         </Routes>

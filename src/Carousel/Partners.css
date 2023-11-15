@@ -1,0 +1,14 @@
+.slick-arrow {
+  display: none !important;
+}
+@media (max-width: 640px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+.card {
+  border: 1px solid red;
+  overflow: hidden;
+  object-fit: cover;
+}
