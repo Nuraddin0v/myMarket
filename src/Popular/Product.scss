@@ -1,6 +1,6 @@
-.container {
+.product-container {
   width: 1320px;
-  margin: 24px auto;
+  margin: 0 auto;
   .title {
     display: flex;
     justify-content: space-between;
@@ -9,6 +9,7 @@
   .products {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+    margin: 24px 0;
     .product {
       width: 264px;
       height: 327px;
@@ -114,7 +115,7 @@
   }
 }
 @media ((min-width: 1320px) and (max-width:1536px)) {
-  .container {
+  .product-container {
     .products {
       display: grid;
       grid-template-columns: auto auto auto auto auto;
@@ -122,7 +123,7 @@
   }
 }
 @media ((min-width: 1280px) and (max-width:1320px)) {
-  .container {
+  .product-container {
     .products {
       display: grid;
       grid-template-columns: auto auto auto auto;
@@ -132,7 +133,7 @@
   }
 }
 @media ((min-width: 1024px)and (max-width:1279px)) {
-  .container {
+  .product-container {
     .products {
       display: grid;
       grid-template-columns: auto auto auto;
@@ -142,7 +143,7 @@
   }
 }
 @media ((min-width: 640px) and (max-width:1023px)) {
-  .container {
+  .product-container {
     .products {
       display: grid;
       grid-template-columns: auto auto;
@@ -152,7 +153,7 @@
   }
 }
 @media (max-width: 639px) {
-  .container {
+  .product-container {
     width: 95%;
     margin: 24px auto;
     .title {

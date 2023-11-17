@@ -6,7 +6,7 @@ import { SalePrice } from "../Function/StarCount";
 const Product = () => {
   return (
     <div>
-      <div className="container">
+      <div className="container product-container">
         <div className="title">
           <h1>Popular Products</h1>
           <button id="btn">

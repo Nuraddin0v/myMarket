@@ -1,0 +1,10 @@
+.sale-container {
+  width: 1320px;
+  margin: 24px auto;
+  display: flex;
+  justify-content: space-between;
+  .saleProduct {
+    width: 424px;
+    height: 536px;
+  }
+}

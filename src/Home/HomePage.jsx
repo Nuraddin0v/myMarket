@@ -3,6 +3,8 @@ import "./HomePage.scss";
 import Categories from "../Popular/Categories";
 import Product from "../Popular/Product";
 import Partners from "../Carousel/Partners";
+import FollowInsta from "../FollowInsta/FollowInsta";
+import Sale from "../Sale/Sale";
 const HomePage = () => {
   return (
     <div>
@@ -231,7 +233,9 @@ const HomePage = () => {
       </div>
       <Categories />
       <Product />
+      <Sale />
       <Partners />
+      <FollowInsta />
     </div>
   );
 };
